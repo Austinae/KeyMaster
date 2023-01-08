@@ -1,4 +1,4 @@
-#### KeyMaster
+### KeyMaster
 
 Generate passwords using python in a terminal
 
@@ -22,7 +22,8 @@ options:
 
 ##### Example use cases
 
-Generate password with 20 characters, with custom symbols *, $, \`, /, =, £ , ',' and ?
+Generate password with 20 characters, with custom symbols *, $, /, =, £ , ',' and ?
+
 `py keymaster.py -l 20 -cs '*$/=£,?'` => zdBMSnE/JfpE3$G?vsu
 
 Generate password with 14 characters, no numbers and no symbols
@@ -53,9 +54,9 @@ $, S or 5 for s
 ###### A password should contain a random combination of:
 
 - Uppercase letters: A-Z
-Lowercase letters: a-z
-Numbers: 0-9
-Symbols:  *^!@#$?/[]+_] (these are the ones I chose, can be changed using cs flag)
+- Lowercase letters: a-z
+- Numbers: 0-9
+- Symbols:  *^!@#$?/[]+_] (these are the ones I chose, can be changed using cs flag)
 
 ###### Password storage
 
