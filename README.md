@@ -63,3 +63,7 @@ $, S or 5 for s
 Most people store passwords either on a notepad file or an excel document without any protection, this is **not secure**. If an intruder gets access to this file either physically or virtually, these aren't encrypted and the personal data behind will be exposed.
 
 A better way of storing your passwords. Download veracrypt and create an encrypted volume using either SHA-256 or SHA-512. Encrypt your [excel workbook](https://www.boisestate.edu/oit-itgrc/it-standards-category/how-to-encrypt-or-protect-an-excel-file/). If you are on a mac, this provides three layers of protection, (a) the OS level, macOS encrypt by default your drive, (b) your encryped volume, (c) your encrypted Excel workbook.
+
+###### Next steps
+
+Use swift to create a build which can run in the menu bar, start [here?](https://www.youtube.com/watch?v=CuMLpnjPr2Y), look into how I can deploy this on the app store.
