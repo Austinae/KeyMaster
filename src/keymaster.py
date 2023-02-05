@@ -1,5 +1,6 @@
 import argparse
 import random
+import subprocess
 
 def generate_password(no_uppercase, no_lowercase, no_numbers, no_symbols, custom_symbols, length):
 	possible_characters = []
@@ -33,5 +34,6 @@ parser.add_argument('-l', '--length', type=int, default=12, help='The length of 
 if __name__ == '__main__':
 	args = parser.parse_args()
 	password = generate_password(args.no_uppercase, args.no_lowercase, args.no_numbers, args.no_symbols, args.custom_symbols, args.length)
-	print(password)
+	subprocess.run("pbcopy", text=True, input=password)
+	print(f'{password} copied to your clipboard')
 
